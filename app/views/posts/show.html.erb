@@ -29,6 +29,7 @@
   <% @comments.each do |comment| %>
     <li class="list-group-item">
       <%= comment.content %>
+      <%= link_to 'Delete', comment, data: {confirm: 'Are you sure?'}, method: :delete %>
     </li>
   <% end %>
 </div>
